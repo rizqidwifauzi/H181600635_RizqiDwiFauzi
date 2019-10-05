@@ -9,7 +9,7 @@ class Pengumuman extends Model
     protected $table='pengumuman';
 
     protected $fillable=[
-        'judul','isi','user_id'
+        'judul','isi','users_id', 'kategori_pengumuman_id'
     ];
 
     protected $casts=[

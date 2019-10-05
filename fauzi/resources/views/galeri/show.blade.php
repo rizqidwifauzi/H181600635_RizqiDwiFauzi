@@ -25,8 +25,13 @@
                     </div>
 
                     <div class="form-group row">
-                    <label class="col-md-4 col-form-label text-md-right">Patch</label>
-                    <label class="col-md-8 col-form-label text-md-left">{!! $galeri->patch !!}</label>  
+                    <label class="col-md-4 col-form-label text-md-right">Path</label>
+                    <label class="col-md-8 col-form-label text-md-left">{!! $galeri->path !!}</label>  
+                    </div>
+
+                    <div class="form-group row">
+                    <label class="col-md-4 col-form-label text-md-right">Kategori ID</label>
+                    <label class="col-md-8 col-form-label text-md-left">{!! $galeri->kategori_galeri_id !!}</label>  
                     </div>
 
                     <div class="form-group row">
@@ -47,7 +52,7 @@
                     <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <a href="{!! route('galeri.index') !!}" class="btn btn-primary">
-                                    BACK
+                                    Back
                                 </a>    
                             </div>
                     </div>

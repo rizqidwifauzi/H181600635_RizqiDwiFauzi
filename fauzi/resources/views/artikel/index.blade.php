@@ -8,6 +8,7 @@
                 <div class="card-header">Daftar Artikel</div>
 
                 <div class="card-body">
+                <a href="{!! route('artikel.create') !!}" class="btn btn-primary">Tambah Data</a> 
                 <table border="1">
             <tr>
                 <td>ID</td>

@@ -15,11 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/refresh_captcha', 'Auth\RegisterController@refreshCaptcha')->name('refresh');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/refresh_captcha', 'Auth\RegisterController@refreshCaptcha')->name('refresh');
+
 
 Route::get('/kategori_artikel','KategoriArtikelController@index')->name('kategori_artikel.index');
 Route::get('/kategori_artikel/create', 'KategoriArtikelController@create')->name('kategori_artikel.create');
@@ -42,15 +42,23 @@ Route::post('/kategori_pengumuman', 'KategoriPengumumanController@store')->name(
 Route::get('/kategori_pengumuman/{id}', 'KategoriPengumumanController@show')->name('kategori_pengumuman.show');
 
 Route::get('artikel','ArtikelController@index')->name('artikel.index');
+Route::get('artikel/create','ArtikelController@create')->name('artikel.create');
+Route::post('artikel','ArtikelController@store')->name('artikel.store');
 Route::get('artikel/{id}', 'ArtikelController@show')->name('artikel.show');
 
 Route::get('berita','BeritaController@index')->name('berita.index');
+Route::get('berita/create','BeritaController@create')->name('berita.create');
+Route::post('berita','BeritaController@store')->name('berita.store');
 Route::get('berita/{id}', 'BeritaController@show')->name('berita.show');
 
 Route::get('galeri','GaleriController@index')->name('galeri.index');
+Route::get('galeri/create','GaleriController@create')->name('galeri.create');
+Route::post('galeri','GaleriController@store')->name('galeri.store');
 Route::get('galeri/{id}', 'GaleriController@show')->name('galeri.show');
 
 Route::get('pengumuman','PengumumanController@index')->name('pengumuman.index');
+Route::get('pengumuman/create','PengumumanController@create')->name('pengumuman.create');
+Route::post('pengumuman','PengumumanController@store')->name('pengumuman.store');
 Route::get('pengumuman/{id}', 'PengumumanController@show')->name('pengumuman.show');
 
 
