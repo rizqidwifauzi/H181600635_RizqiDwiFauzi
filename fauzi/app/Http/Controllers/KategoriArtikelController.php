@@ -67,5 +67,6 @@ class KategoriArtikelController extends Controller
         return redirect(route('kategori_artikel.index')); 
     }
 
+
 }
 

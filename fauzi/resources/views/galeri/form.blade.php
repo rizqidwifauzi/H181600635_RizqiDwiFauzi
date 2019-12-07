@@ -48,6 +48,7 @@
 
     <div class="col-md-6">
         <input id="path" type="text" class="form-control @error('path') is-invalid @enderror" name="path" value="{{ old('path') }}" required>
+            {!! Form::file('path', null, ['class'=>'form-control']) !!}
 
             @error('path')
                 <span class="invalid-feedback" role="alert">
